@@ -67,6 +67,10 @@ const footerSections: FooterSection[] = [
         href: URLS.ABOUT,
       },
       {
+        label: "Blogs",
+        href: URLS.BLOGS,
+      },
+      {
         label: "Contact",
         href: URLS.CONTACT,
       },

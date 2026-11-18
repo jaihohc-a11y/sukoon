@@ -60,9 +60,6 @@ const MarqueeGallery = ({ images }: { images: string[] }) => {
           <div
             key={index}
             className="w-[45vw] shrink-0 cursor-pointer lg:w-[30.32976rem]"
-            onClick={() => {
-              console.log("Clicked image:", image);
-            }}
           >
             <img
               src={image}

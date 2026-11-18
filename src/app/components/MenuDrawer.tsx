@@ -10,6 +10,7 @@ const navLinks = [
   { label: "OUR STORY", href: URLS.ABOUT },
   { label: "MENU", href: URLS.MENU },
   { label: "GALLERY", href: URLS.GALLERY },
+  { label: "BLOGS", href: URLS.BLOGS },
   { label: "CONTACT", href: URLS.CONTACT },
   { label: "ORDER ONLINE", href: URLS.ORDER_ONLINE },
 ];

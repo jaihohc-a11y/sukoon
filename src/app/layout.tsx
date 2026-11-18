@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
-import BookingModal from "./components/booking/BookingModal";
-import Footer from "./components/footer/Footer";
-import Headers from "./components/Headers";
-import Preloader from "./components/Preloader";
+import PublicShell from "./components/PublicShell";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,19 +41,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentRegular.variable} ${charmanSerifLight.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Preloader />
-        <Headers />
-        {/* <ConditionalHeader /> */}
-        {children}
-        <Footer />
-        <BookingModal />
+        <PublicShell>{children}</PublicShell>
       </body>
     </html>
   );
